@@ -1,0 +1,195 @@
+/*  
+Author: Chris Petsche
+LuckyStrikeVirtualTourPageStyles.css
+Version: 1.0
+Updated: 13 Dec 2019
+ 
+*/
+
+/********************************************************************************************************************************/
+                                        /* ******  ****** */
+/********************************************************************************************************************************/
+p {
+	margin: 0 auto;
+	text-indent: 50px;
+}
+
+.projectPageContentBlock {
+	margin: 35px auto 45px;
+}
+
+.luckyContentBlock {
+	display: block;
+	margin: 0 auto;
+	padding: 0 12px;
+	position: relative;
+}
+
+.luckyHeaderRule {
+	margin: 12px 50px;
+}
+
+/*#pitchBlock {
+
+}*/
+
+#luckyStrikeVirtualTourTitle {
+	color: white;
+	margin: 45px auto 24px;
+	text-align: center;
+}
+
+.leftImageContainer {
+	border-bottom: 1px solid white;
+	border-left: 2px solid white;
+	border-radius: 5px;
+	border-right: 2px solid white;
+	border-top: 1px solid white;
+	float: left;
+	margin: 12px 0 12px 6px;
+	max-width: 360px;
+	padding: 1px;
+}
+
+.rightImageContainer {
+	border-bottom: 1px solid white;
+	border-left: 2px solid white;
+	border-radius: 5px;
+	border-right: 2px solid white;
+	border-top: 1px solid white;
+	float: right;
+	margin: 12px 6px 12px 0;
+	max-width: 360px;
+	padding: 1px;
+}
+
+#pitchImage {
+	width: 100%;
+}
+
+#pitchTextContainer {
+	display: inline-block;
+	max-width: 400px;
+}
+
+.floatingParagraph {
+	display: inline-block;
+	max-width: 350px;
+	padding-top: 12px;
+}
+
+#pitchTextIntro {
+	font-weight: bold;
+	margin: 5px auto;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#pitchTextBlock {
+	padding: 0 25px;
+}
+
+#tourCurrentProgressVideoBlock {
+	text-align: center;
+}
+
+#tourCurrentProgressVideo {
+	border-bottom: 2px solid rgb(192, 0, 192);
+    border-left: 1px solid rgb(192, 0, 192);
+    border-right: 1px solid rgb(192, 0, 192);
+    border-top: 2px solid rgb(192, 0, 192);
+    border-radius: 20px;
+    display: block;
+    margin: 12px auto;
+    max-width: 490px;
+    padding: 3px;
+}
+
+#summaryblock {
+	padding: 12px;
+}
+
+.rolesAndCreationsContainerBlock {
+	border: 1px solid white;
+	border-radius: 10px;
+	margin: 12px auto;
+	position: relative;
+}
+
+.rolesAndCreationsContainer {
+	color: white;
+	display: inline-block;
+	margin: auto;
+	width: 350px;
+}
+
+.rolesAndCreationsTextContainer {
+	display: inline-block;
+	margin: 24px auto;
+	width: 50%;
+}
+
+.rolesAndCreationsTextOutline {
+	padding: 12px;
+	position: relative;
+}
+
+.rolesAndCreationsTitleText {
+	display: block;
+	margin: 6px 50px;
+	text-align: center;
+}
+
+.rolesAndCreationsBasicDetails {
+	display: block;
+	font-size: 0.75rem;
+	margin: 12px auto 6px;
+	position: relative;
+}
+
+.rolesAndCreationsHighlightedDetails {
+	display: block;
+	font-size: 0.65rem;
+	margin: 6px auto;
+	position: relative;
+}
+
+.projectButtonContainer {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.rolesAndCreationsVisualsOutline {
+	margin: 15px;
+}
+
+.rolesAndCreationsImageContainer {
+	border-bottom: 1px solid white;
+	border-left: 2px solid white;
+	border-radius: 5px;
+	border-right: 2px solid white;
+	border-top: 1px solid white;
+	max-width: 360px;
+	padding: 1px;
+}
+
+.briefHistoryBlock {
+	margin: 0 0 12px;
+	position: relative;
+}
+
+.baseBlock {
+	margin: 30px auto 12px;
+	text-align: center;
+	width: 100%;
+}
+
+.adjustedLeftImageContainer {
+	margin-right: 12px;
+}
+
+
+/**********************************************************/
+            /* ******  ****** */
+/**********************************************************/
+

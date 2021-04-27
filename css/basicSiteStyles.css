@@ -1,0 +1,553 @@
+/*  
+Author: Chris Petsche
+basicSiteStyles.css
+Version: 1.2
+Updated: 18 Nov 2019
+ 
+This style sheet is for all the page of the portfolio site. It carries all
+the general attributes found on every page, which consists of the header and
+footer details, as well as the background content and basic interactive features
+such as navigation buttons and so on.
+*/
+
+/********************************************************************************************************************************/
+                                        /* ****** Site Body and Background Elements ****** */
+/********************************************************************************************************************************/
+                                /* In this section, every element is assumed to be between 0
+                                and 40 in the Z-index, as specified in the html notes. 
+                                Everything related to the background of any page is found here,
+                                starting with bottom layer of the Z-index, the 'body' being a 0. */
+
+/* Every body element throughout the site is set to have no
+border, margin or padding, but will havebackground-color and
+the stated Z-index. All other elements will be layered above
+the 'body' element. */
+body {
+    background-color: rgba(0, 0, 152, 0.8);
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+.backgroundVideoContainer {
+	height: 100%;
+	opacity: 0.9;
+	position: fixed;
+	width: 100%;
+	z-index: 0;
+}
+
+#sideColumnContainer {
+	font-size: 0.001rem;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 130px;
+	width: 100%;
+}
+
+.backgroundColumn {
+	display: inline-block;
+	height: 100%;
+	max-width: 300px;
+	padding: 0 150px;
+}
+
+#backgroundLeftColumn {
+ 	background-image: linear-gradient(to right, rgb(0, 0, 0, 0.85), rgba(0, 75, 230, 0.0));
+	left: 0;
+	margin: 0;
+	position: absolute;
+}
+
+#backgroundRightColumn {
+ 	background-image: linear-gradient(to left, rgb(0, 0, 0, 0.85), rgba(0, 75, 230, 0.0));
+	right: 0;
+	margin: 0;
+	position: absolute;
+}
+
+/* Any other background detail will be placed here! */
+
+/********************************************************************************************************************************/
+                                            /* ****** General Site Elements ****** */
+/********************************************************************************************************************************/
+                                    /* The elements in this section are found on every page,
+                                    but no specific place. The only thing they have in common
+                                    is that they are not unique. */
+
+/* Both navigation button displays will be contained in the toggle block.
+Set for mostly placement sake. */
+.navButtonDisplay_ToggleBlock {
+    display: block;
+    width: 100%;
+}
+
+/* Both navigation button displays will have an identical button with
+the following styling attributes. */
+.navButtonDisplayToggle {
+    background-color: lightblue;
+    border-radius: 10px;
+    height: 20px;
+    width: 50px;
+}
+
+/* Block that holds all the primary content for each page. Another
+element mostly for placement.  */
+.primaryContentBlock {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 31px 0;
+    position: relative;
+    top: 100px;
+    width: 100%;
+}
+
+/* Block that holds vertical location for each level of interaction coming
+down the home page. !! Background-color is temporary, to give a visual
+location as the page is being constructed!! */
+.basicContentBlock {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+/* This is the container that will give the pages
+basic content its placement within the basic content
+blocks as they come down the page. */
+.basicContentContainer {
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-bottom: 1px solid white;
+    border-left: 3px solid white;
+    border-radius: 10px;
+    border-right: 3px solid white;
+    border-top: 1px solid white;
+    display: block;
+    margin: 0 auto;
+    max-width: 808px;
+}
+
+
+
+                                /******************************************************************/
+                                        /* *** Basic Site: Button Style and Behavior *** */
+                                /******************************************************************/
+                                    /* As there are several buttons throughout the site, most
+                                    share styles, but a couple are quite differet. The following
+                                    classes handle each case. */
+
+/* The majority of the buttons will have the same 
+theme to them, especially the navigation buttons.
+This class handles the basics for them all. */
+.basicSiteBtn_Theme {
+    background: rgb(0, 10, 110);
+    background-image: linear-gradient(to bottom, rgb(0, 75, 230, 0.65), rgba(0, 0, 0, 0.05));
+    border-radius: 25px;
+    color: rgb(255, 89, 255);
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 2px;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Styles the basic site buttons when the mouse
+hovers over them. */
+.basicSiteBtn_Theme:hover {
+    background: rgb(0, 10, 110);
+    background-image: linear-gradient(to bottom, rgb(0, 75, 230, 0.65), rgba(0, 0, 0, 0.05));
+    border: 1px solid rgb(255, 0, 242);
+    border-radius: 25px;
+    color: rgb(255, 0, 255);
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 2px;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* When a button is unavailable, and it breaks
+the layout by removing it, it carries the greyed
+theme to convey to identify it as disabled. */
+.basicSiteBtn_Greyed {
+    background: rgb(77, 79, 102);
+    background-image: linear-gradient(to bottom, rgba(77, 83, 95, 0.65), rgba(0, 0, 0, 0.37));
+    border-radius: 25px;
+    color: rgb(151, 67, 151);
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 2px;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Buttons that require a specific size to fit
+their designed container have one of these
+classes. The small button is the smallest
+declared button size. */
+.smallBtn {
+    width: 55px;
+}
+
+/* Wide button is the largest declared button size. */
+.wideBtn {
+    width: 125px;
+}
+
+                                    /******************************************************************/
+                                        /* *** Basic Site: Page Sectioning and Text Style *** */
+                                    /******************************************************************/
+                                    /* 
+                                       Each commented-out font-family below are the fonts pulled from 
+                                       Google Fonts to give specific text a certian look across most 
+                                       every internet browser, as well as a backup that is similar
+                                       just in case an odd browser doesn't support the font. 
+
+                                                    font-family: 'Oregano', cursive;
+                                                    font-family: 'Open Sans', sans-serif;
+                                                    font-family: 'Teko', sans-serif;
+                                                    font-family: 'Kaushan Script', cursive;
+                                                    font-family: 'Philosopher', sans-serif;
+                                                    font-family: 'El Messiri', sans-serif;
+                                                    font-family: 'Niconne', cursive;
+                                                    font-family: 'Quicksand', sans-serif;
+ 
+                                   */
+
+
+/* Simplay insures that the content in
+any page introduction is centered. */
+.introDisplay {
+    text-align: center;
+}
+
+/* The text that makes up the intro to the site. */
+.pageIntroText {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .9rem;
+    left: 0;
+    margin: 12px auto;
+    max-width: 600px;
+    padding: 3px;
+    position: relative;
+    right: 0;
+    text-align: center;
+}
+
+/* Block that provides vertical location for the 
+horizontal sections going down the page. */
+.sectionTitleContainer {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    padding: 5px;
+    position: relative;
+}
+
+/* Area of text titling the horizontal sections
+going down the page. */
+.sectionTitle {
+    color: white;
+    font-family: 'El Messiri', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 0 0 3px rgb(255, 0, 157), 0 0 5px rgb(0, 174, 255);
+}
+
+/* The text style set to used most across the site. */
+.basicSiteText {
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    font-size: .9rem;
+}
+
+/* Simply adds the bold attribute to any site text. */
+.siteStdBoldedText {
+    font-weight: bold;
+}
+
+/* Undlines any site text. */
+.siteStdUnderlinedText {
+    text-decoration: underline;
+}
+
+
+
+/********************************************************************************************************************************/
+                                        /* ****** Elements of Header Block ****** */
+/********************************************************************************************************************************/
+                                        /* In this chunk of the basic site styling,
+                                        all the header elements are detailed. They
+                                        are laid out as they are in the html with
+                                        their level of importance and according to
+                                        their relative placement on the page. */
+
+/* Block of content that remains fixed to the top of each 
+page throughout the whole site. !!The background-image will
+later be replaced with an image so that all browsers showing
+the site can view it as it's designed to be seen... along
+with the gradient currently shown via the h1!! */
+header {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Any imagary for the header that will fall beneath the other
+content on the Z-index will be placed here. */
+
+                        /******************************************************************************/
+                                    /* ****** Basic Site: Fixed Header Elements ****** */
+                        /******************************************************************************/
+                                      /* The pieces of the header that will never move, 
+                                      such as the name plate, professional title, site 
+                                      type and cosmetics are detailed below  */
+
+/* There is only one piece of text that uses the h1 tag through 
+the entire site. My name at the top of the page. */
+h1 {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    border-width: 0;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 2.5rem;
+    font-family: 'Oregano', cursive;
+    line-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 17px;
+    position: relative;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    z-index: 11;
+}
+
+/* Like the h1, there is only one use of the h3 in the whole
+site. For the professional title beneath my name. */
+h3 {
+    border-width: 0;
+    color: rgb(220, 232, 253);
+    display: block;
+    font-family: 'El Messiri', sans-serif;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 7px;
+    position: relative;
+    text-shadow: 0 0 3px rgb(255, 0, 157), 0 0 5px rgb(0, 174, 255);
+}
+
+/* This element is created for 
+placement and cosmetic staging. */
+.headerContainer {
+    display: inline-block;
+}
+
+/* This element is also created for 
+placement and cosmetic staging. */
+.headerContainerPrimaryContent {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    margin: 0;
+}
+
+/* Holds the professional title content, and applies a 
+background color for further styling the area at the top of
+each page. */
+.headerCenterPlate {
+    background: rgba(0, 0, 0, 0.164);
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 3px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* The text just above the navigation buttons letting the 
+viewer know this is a portfolio. */
+.siteTypeText {
+    border-width: 0;
+    color: rgba(255, 255, 255, 0.719);
+    display: block;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 2px 5px;
+    position: relative;
+}
+
+/* The cosmetic elements to art the
+ site type section will go here! */
+
+
+                        /******************************************************************************/
+                                    /* ****** Basic Site: Header Nav Button Display ****** */
+                        /******************************************************************************/
+                                        /* The couple elements that are specific to the
+                                        header navigation button display are styled here.
+                                        The window behind the buttons that opens and closes,
+                                        along with the toggle button container that sits
+                                        just below it. */
+
+/* Gives place for the navigation buttons seen on all pages
+of the site, at the top of the page. And gives the location
+a little style. */
+.previewPageNavButtonContainer {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.50));
+    border-bottom: 2px solid white;
+    border-left: 1px solid white;
+    border-radius: 0 0 5px 5px;
+    border-right: 1px solid white;
+    display: block;
+    height: 171px;
+    margin: 0 auto;
+    padding: 0 0 5px;
+    position: relative;
+    text-align: center;
+    transition: 2s;
+    width: 185px;
+}
+
+/* One of two toggle button containers of this style.
+This one here in the header has its border radius at
+the bottom of the container. */
+.headerNavButtonDisplay_ToggleContainer {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.35));
+    border-bottom: 2px solid white;
+    border-left: 1px solid white;
+    border-radius: 0 0 20px 20px;
+    border-right: 1px solid white;
+    display: inline-block;
+    padding: 3px;
+    width: 125px;
+}
+
+
+/********************************************************************************************************************************/
+                                        /* ****** Elements of Footer Block ****** */
+/********************************************************************************************************************************/
+                                        /* Like above, this chunk of the basic site 
+                                        styling, all the footer elements are detailed. 
+                                        They are laid out as they are in the html with
+                                        their level of importance and according to their 
+                                        relative placement on the page. */
+
+/* Holds all content fixed the the 
+bottom of each page of the site. */
+footer {
+    bottom: 0;
+    display: block; 
+    margin: 0 auto;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+                        /******************************************************************************/
+                                    /* ****** Basic Site: Footer Nav Button Display ****** */
+                        /******************************************************************************/
+                                        /* Like above, this chunk of the basic site 
+                                        styling, all the footer elements are detailed. 
+                                        They are laid out as they are in the html with
+                                        their level of importance and according to their 
+                                        relative placement on the page. */
+
+/*  Like the toggle container in the header, this
+one gets a border radius attribute added to it, but
+it's applied to the top of the container instead.  */
+.footerNavButtonDisplay_ToggleContainer {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.35));
+    border-left: 1px solid white;
+    border-radius: 20px 20px 0 0;
+    border-right: 1px solid white;
+    border-top: 2px solid white;
+    display: inline-block;
+    padding: 3px;
+    width: 125px;
+}
+
+/* This is the container that holds all the navigation buttons in
+the footer display, that will open and close for the viewer. */
+.professionalDocumentationPageNavButtonContainer {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.50));
+    border-left: 1px solid white;
+    border-radius: 5px 5px 0 0;
+    border-right: 1px solid white;
+    border-top: 2px solid white;
+    display: block;
+    height: 73px;
+    margin: 0 auto;
+    padding: 5px 0 0;
+    position: relative;
+    text-align: center;
+    transition: 2s;
+    width: 235px;
+}
+
+/* As pointed out in the html, there is a temporary need 
+for a spacer in this display for cosmetic purposes. */
+.footerDisplayButtonSpacer {
+    margin: 2.5px auto;
+    width: 100%;
+}
+
+                    /******************************************************************************/
+                                    /* ****** Basic Site: Fixed Footer Elements ****** */
+                    /******************************************************************************/
+                                        /* These elements will be all the pieces
+                                        found fixed to the bottom of the page. As is
+                                        with the rest of the code layout, they are 
+                                        staged according to their importance and page
+                                        placements. */
+
+/* Houses the pro-site links within the base container
+and handles the gradient styling */
+.proSiteLinkContainer {
+    background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.541));
+    border-bottom: 1px solid grey;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* The links that will take the view to either of the 
+professional sites associated with this site. */
+.proSiteButton {
+    padding: 3px;
+    text-decoration: none;
+}
+
+/* Gives marker between pro-site links its position and color. */
+.proSiteButtonDivider {
+    color: white;
+    margin: 0 15px;
+}
+
+/* Styles copy right content at the bottom of each site page. */
+.copyRightContainer {
+    background-color: black;
+    color: grey;
+    font-size: .75rem;
+    padding: 1px;
+}
+

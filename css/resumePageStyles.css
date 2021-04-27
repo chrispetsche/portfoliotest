@@ -1,0 +1,170 @@
+/*  
+Author: Chris Petsche
+resumePagetyles.css
+Version: 1.2
+Updated: 23 Nov 2019
+ 
+In this style sheet, each of the pieces of the resume page are detailed. Many of
+the elements on that page are unique and take on a specific structure.
+*/
+
+/********************************************************************************************************************************/
+                                        /* ****** Resume Basic Details ****** */
+/********************************************************************************************************************************/
+
+
+/* Provides general structure for details 
+specific to the resume. */
+.resumeDetailContainer {
+    margin: 0 auto;
+    max-width: 500px;
+    position: relative;
+}
+
+/* Gives the title areas of the resume a
+highlighting to make them standout. */
+.resumeTitling {
+    background-color: rgba(137, 43, 226, 0.384);
+    border-bottom: .5px solid white;
+}
+
+
+/**********************************************************/
+            /* ****** Skills Details ****** */
+/**********************************************************/
+
+/* Gives the skills list its spacing. */
+li {
+    margin: 5px 0;
+}
+
+/* Sets basic details of skills list. */
+.relevantSkillsList {
+    list-style-type: none;
+    padding: 0 12px;
+}
+
+
+/**********************************************************/
+            /* ****** Experience Details ****** */
+/**********************************************************/
+
+/* Sets position for the experience details. */
+#resumeExperienceDetails {
+    position: relative;
+}
+
+/* Each experience text block has its own
+container needing positional structure. */
+.experienceTextContainer {
+    padding: 0 10px;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+/* Shapes the text within each expereince container. */
+.experienceText {
+    margin: 5px auto;
+    max-width: 496px;
+}
+
+/* The titles of each experience also gets highlights, 
+and positioned. */
+.experienceTitle {
+    background-color: rgba(137, 43, 226, 0.384);
+    text-align: center;
+}
+
+/* The title of each experience gets a horizontal
+ruler styled above and below it. */
+.experienceTitleBar {
+    margin: 0;
+    padding: 0;
+}
+
+/* The fine details of the experiences get a 
+couple minor tweaks. */
+.experienceDetails {
+    font-size: .80rem;
+    font-style: italic;
+}
+
+/* The fine details of the experiences are
+also shifted to the left side of the display, */
+.experienceDetailsLeft {
+    display: inline-block;
+    position: relative;
+    left: 5px;
+}
+
+/* Or the right side depending on what it's
+detailing. */
+.experienceRightEdgeText {
+    padding-right: 10px; 
+}
+
+
+/**********************************************************/
+            /* ****** Education Details ****** */
+/**********************************************************/
+
+
+/* The education section containers positions. */
+.educationDescriptionContainer {
+    margin: 10px auto;
+    padding: 0 10px;
+    position: relative;
+    max-width: 500px;
+}
+
+/* Gives details to the degree titled with. */
+.creditTitle {
+    display: inline-block;
+    left: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* Gives details to name of degree. */
+.eduDegreeTitle {
+    display: inline-block;
+    font-style: italic;
+    margin: 0 50px 0 0;
+}
+
+/* The fine details of the degree set the
+right side of the page. */
+.rightEdgeText {
+    display: inline-block; 
+    position: absolute;
+    right: 10px;
+}
+
+
+
+
+/********************************************************************************************************************************/
+                                        /* ****** Resume Overrides ****** */
+/********************************************************************************************************************************/
+
+
+/* Provides buffer between the top section title
+and the header container so that the toggle 
+container doesn't overlap it. */
+#resumeCareerObjectiveSectionTitle {
+    margin: 30px 0 0;
+}
+
+/* Provides added structure to the intro of the
+resume page, or the Career objectives sections. */
+#resumePageIntro {
+    padding: 0 10px;
+    max-width: 500px;
+}
+
+/* Provides buffer between the bottom section 
+and the footer container so that the toggle 
+container doesn't overlap its content. */
+#resumeEducationBlock {
+    margin: 0 0 30px;
+}

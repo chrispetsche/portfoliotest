@@ -1,0 +1,175 @@
+/*  
+Author: Chris Petsche
+previewPageStyles.css
+Version: 1.2
+Updated: 22 Nov 2019
+ 
+This style sheet will cover the attributes specific to the sites preview
+pages. All the elements that make a preview display are handled below.
+*/
+
+/********************************************************************************************************************************/
+                                        /* ****** Site Body and Background Elements ****** */
+/********************************************************************************************************************************/
+
+/* Block just below header that 
+holds the sites intro text.*/
+.briefIntroContainer {
+    background-color: rgba(0, 0, 0, 0.452);
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0 2px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Block that holds horizontal location for each 
+of preview displays coming down the home page. */
+.previewDisplayBlock {    
+    display: block;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Container that will hold all the content
+for each of the preview displays. */
+.previewDisplayContainer {
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-bottom: 0.5px solid white;
+    border-left: 1px solid white;
+    border-radius: 10px 10px 0 0;
+    border-right: 1px solid white;
+    border-top: 3px solid white;
+    display: block;
+    max-width: 808px;
+    margin: 12px auto 0;
+    padding: 10px 4px 0;
+    position: relative;
+    text-align: center;
+}
+
+/* Container at the top of each preview display
+that will hold the title for each project. */
+.previewDisplayTitleContainer {
+    background-color: rgb(67, 57, 71);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: block;
+    margin: 0 auto 10px auto;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+}
+
+/* This will handle the attributes of any
+site based text title. */
+.previewDisplayTitle {
+    color: white;
+    display: inline-block;
+    font-size: .8rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* The main bulk of the details in a display
+are held and handled in this class. */
+.previewDisplayDetailsContainer {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+}
+
+/* This displays will have two types of video display.
+This one will cause the content around the video to
+float to the left. */
+.previewDisplayVideoA {
+    border-bottom: 2px solid rgb(192, 0, 192);
+    border-left: 1px solid rgb(192, 0, 192);
+    border-right: 1px solid rgb(192, 0, 192);
+    border-top: 2px solid rgb(192, 0, 192);
+    border-radius: 20px;
+    display: block;
+    float: left;
+    margin: 5px auto;
+    max-width: 290px;
+    padding: 3px;
+}
+
+/* This displays will have two types of video display.
+This one will cause the content around the video to
+float to the right. */
+.previewDisplayVideoB {
+    border-bottom: 2px solid rgb(192, 0, 192);
+    border-left: 1px solid rgb(192, 0, 192);
+    border-right: 1px solid rgb(192, 0, 192);
+    border-top: 2px solid rgb(192, 0, 192);
+    border-radius: 20px;
+    display: block;
+    float: right;
+    margin: 5px auto;
+    max-width: 290px;
+    padding: 3px;
+}
+
+/* This class helps shape the text in the main
+descriptions of the displays. */
+.previewDisplayBasicDescriptionText {
+    display: inline-block;
+    margin: 5px 15px 10px;
+    max-width: 425px;
+    padding: 3px;
+    position: relative;
+    text-align: center;
+}
+
+/* The container that handles the placement of
+the preview displays "View Project" button. */
+.previewDisplayButtonContainer {
+    display: block;
+    margin: 0;
+    padding: 0 0 5px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+/* Block that places the extended summary display
+toggle button at the bottom of the displays. */
+.previewExtentedDisplayToggleBlock {
+    display: block;
+    width: 100%;
+}
+
+/* Container that holds and shapes the actual
+toggle button for the extended summary displays. */
+.previewExtentedDisplayContainerToggle {
+    background-color: lightblue;
+    border-radius: 10px;
+    height: 20px;
+    width: 50px;
+}
+
+/* Container that will open and close for the extended
+summary displays. */
+.previewSectionDisplayExtendedContainer {
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-bottom: 3px solid white;
+    border-left: 1px solid white;
+    border-radius: 0 0 10px 10px;
+    border-right: 1px solid white;
+    display: block;
+    margin: 0 auto 12px;
+    max-width: 792px;
+    padding: 12px;
+}
+
+/* Class that will handle all of the content in an
+extended summary display that will fade in and out. */
+.previewSectionDisplayExtendedContent {
+    display: none;
+    opacity: 0%;
+}
