@@ -1,7 +1,7 @@
 
 function SetBackgroundVideoParameters ()
 {
-	var backgroundVideo = document.getElementById("backgroundVideo");
+	//var backgroundVideo = document.getElementById("backgroundVideo");
 	
-	backgroundVideo.playbackRate = 0.5;
+	//backgroundVideo.playbackRate = 0.5;
 }

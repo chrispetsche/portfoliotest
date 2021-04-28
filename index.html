@@ -94,21 +94,21 @@ above this pages closing 'body' tag. -->
                 and will be layout out with elements at 0 Z-index at the top and working toward 49. -->
 
 
-<div class="backgroundVideoContainer">
+    <div class="backgroundVideoContainer">
+    
+        <video id="backgroundVideo" muted autoplay loop>
+            <source src="videos/PortfolioVideo.mp4" type="video/mp4">
+        </video>
+        
+    </div>
 
-<video id="backgroundVideo" muted autoplay loop>
-  <source src="videos/PortfolioVideo.mp4" type="video/mp4">
-</video>
+    <div id="sideColumnContainer">
 
-</div>
+        <div class="backgroundColumn" id="backgroundLeftColumn"></div>
 
-<div id="sideColumnContainer">
+        <div class="backgroundColumn" id="backgroundRightColumn"></div>
 
-	<div class="backgroundColumn" id="backgroundLeftColumn">L</div>
-
-	<div class="backgroundColumn" id="backgroundRightColumn">R</div>
-
-</div>
+    </div>
 
 
         <!-- *************************************************************************************************** -->
@@ -140,28 +140,11 @@ above this pages closing 'body' tag. -->
             my name will have an h1 tag! -->
             <h1>CHRIS PETSCHE</h1>
 
-            <!-- Handles the images around title and below name. 
-            Will contain title text an said image. -->
-            <div class="headerCenterPlate">
-
-                <!-- Each preview page with have a title for the type of designs 
-                and developments it will display. This is the second thing that 
-                should stick with my name. So, its Z-index is 148. And like the 
-                name above, because of the elements importance, it will be the 
-                only one with an h3 tag! -->
-                <h3>Artist <br> Designer and Developer</h3>
-
-                <!-- The image surrounding the title of the page will take Z-index 146 so that it sits
-                just below the title per its design, but so that it also never interfers with the site
-                title below. -->
-
-            </div>
-
             <!-- Handles site type text at the bottom 
             of the header display, will contain site
             type text cosmetic spire images, and header 
             base art to acsent header button display. -->
-            <div> 
+            <div class="siteTypeContainer"> 
 
                 <!-- Handles site type text for the header display. 
                 This is the 3rd most important element in the header, 
@@ -175,59 +158,59 @@ above this pages closing 'body' tag. -->
                 the navigation buttons below, taking a Z-index of 145. -->
 
             </div>
+
+            <div class="primarySkillsBlock">
+
+                <!-- Each preview page with have a title for the type of designs 
+                and developments it will display. This is the second thing that 
+                should stick with my name. So, its Z-index is 148. And like the 
+                name above, because of the elements importance, it will be the 
+                only one with an h3 tag! -->
+                <a class="primarySkillsButton" href= ""><h3>Designer</h3></a>
+                    
+
+                <a class="primarySkillsButton" href= ""><h3>Artist</h3></a>
+
+
+                <a class="primarySkillsButton" href= ""><h3>Developer</h3></a>
+    
+                <!-- The image surrounding the title of the page will take Z-index 146 so that it sits
+                just below the title per its design, but so that it also never interfers with the site
+                title below. -->
+    
+            </div>
+
+            <div class="basicSiteNavButtonsContainer"> 
+
+                <a class="proSiteButton linkedInButton basicSiteText" href= "">Resume</a>
+                    
+                <span class="basicSiteText siteStdBoldedText">|</span>
+
+                <a class="proSiteButton upWorkButton basicSiteText" href= "">Bio</a>
+
+                <span class="basicSiteText siteStdBoldedText">|</span>
+
+                <a class="proSiteButton upWorkButton basicSiteText" href= "">Contact</a>
+
+            </div>
             
         </div>
 
-                <!-- ************************************************************************************ -->
-                                        <!-- ****** NAV BUTTON DISPLAY ****** -->
-                <!-- ************************************************************************************ -->
-                <!-- Each page will have two navigation button displays that give the viewer access to other
-                site related pages. The one here in the header contains navigation buttons for the various
-                skills preview pages that display the different type of work I am capable of doing. -->
+        <!-- Each of the preview pages will have a brief introduction.
+        This container will hold those briefings. -->
+        <div class="briefIntroContainer">
 
-        <!-- Holds and handles content for the navigation buttons within the page header display container.
-        It has a class for styling, and an ID for the opening and closing behavior of the button display. -->
-        <div class="previewPageNavButtonContainer" id="previewPageNavButtonDisplay">
-            
-            <!-- Skills navigation button 1 will take the viewer to the system design preview page. -->
-            <a class="basicSiteBtn_Theme smallBtn navButton_Header" href= "systemsPreview.html">SYSTEMS</a>
-            <!-- Skills navigation button 2 will take the viewer to the coding preview page. -->
-            <a class="basicSiteBtn_Theme smallBtn navButton_Header" href= "codingPreview.html">CODING</a>
-            <!-- Skills navigation button 3 will take the viewer to the level design preview page. -->
-            <a class="basicSiteBtn_Theme smallBtn navButton_Header" href= "levelPreview.html">LEVEL</a>
-            <!-- Skills navigation button 4 will take the viewer to the story design preview page. -->
-            <a class="basicSiteBtn_Theme smallBtn navButton_Header" href= "storyPreview.html">STORY</a>
-            <!-- Skills navigation button 5 will take the viewer to the 3D modeling preview page. -->
-            <a class="basicSiteBtn_Theme wideBtn navButton_Header" href= "modelsPreview.html">3D MODELING</a>
-            <!-- Skills navigation button 6 will take the viewer to the environment design preview page. -->
-            <a class="basicSiteBtn_Theme wideBtn navButton_Header" href= "environmentsPreview.html">ENVIRONMENT</a>
-            <!-- Skills navigation button 7 is greyed out with no page link because this is the current page
-            the viewer is observing. -->
-            <a class="basicSiteBtn_Greyed wideBtn navButton_Header">EXPERIENCES</a>
+            <!-- This is the text for the brief intro at the 
+            beginning of the project preview pages. -->
+            <p class="pageIntroText">
+                Games are so much more than a way of having fun, as virtual reality is so much more than a means of playing games. 
+                They are multidimensional frameworks for both the construction and observation of experiences. For what are WE but
+                the sum of our unique experiences broken down and described by the type of interactions that take place within each
+                individual experience.
+            </p>
 
         </div>
         
-        <!-- This is where the toggle button for the header navigation 
-        buttons will be. The block itself is just for the sake of 
-        placement. -->
-        <div class="navButtonDisplay_ToggleBlock">
-
-            <!-- The toggle container holds the actual toggle button for the 
-            header navigation buttons, and will also hold the cosmetic images 
-            for the base of the container as well as the button overlay. -->
-            <div class="headerNavButtonDisplay_ToggleContainer">
-
-                <!-- The cosmetics will be held here!! -->
-
-                <!-- This is the actual toggle button for the header navigation button display. When a viewer
-                clicks it, it sends a message to the displays behavior script telling it to change the status
-                of the display window, and that it is the 'header' and not the 'footer' display that wants to
-                make the change. -->
-                <button class="navButtonDisplayToggle" onclick="ToggleButtonDisplayStatus (true)"></button>
-            </div>
-
-        </div>
-
     </header>
 
 
@@ -243,376 +226,8 @@ above this pages closing 'body' tag. -->
     content for each page. -->
     <div class="primaryContentBlock">
 
-        <!-- Each of the preview pages will have a brief introduction.
-        This container will hold those briefings. -->
-        <div class="briefIntroContainer introDisplay">
-
-            <!-- This is the text for the brief intro at the 
-            beginning of the project preview pages. -->
-            <p class="pageIntroText">
-                Games are so much more than a way of having fun, as virtual reality is so much more than a means of playing games. 
-                They are multidimensional frameworks for both the construction and observation of experiences. For what are WE but
-                the sum of our unique experiences broken down and described by the type of interactions that take place within each
-                individual experience.
-            </p>
-
-        </div>
-
-        <!-- Vertical block holding the section title text for 
-        the page, a band of color and an image that wraps around 
-        the text!! -->
-        <div class="sectionTitleContainer">
-
-	        <!-- An h5 header tag to display what the context of the page is. -->
-            <h5 class="sectionTitle">Experience Project Previews</h5>
-
-            <!-- The background image for the section title will be placed here. -->
-
-
-        </div>
-
-                <!-- ************************************************************************************ -->
-                                        <!-- ****** PROJECT DISPLAYS ****** -->
-                <!-- ************************************************************************************ -->
-                <!-- For the project preview pages, the primary content will be summaries of all my work 
-                based on the type of work the page is dedicated to. Each summary is built from a display
-                block, a display container, and extened display container. -->
-
-        <!-- Horizontal block to stage the location of the 
-        project preview displays going down the page. -->
-        <div class="previewDisplayBlock">
-
-            <!-- Display container that holds the intial content viewers will see
-            about the project being shown. -->
-            <div class="previewDisplayContainer">
-
-                 <!-- Block that holds the project title information. -->
-                 <div class="previewDisplayTitleContainer">
-                     <!-- The actual title of the project is displayed here. -->
-                    <p class="previewDisplayTitle">PROJECT 1</p>
-                </div>
-
-                <!-- Container that holds the primary summary for this project preview 
-                display. A piece of imagery, a small text description, and a button 
-                linked to the full project page if the viewer wishes to see it. At the 
-                bottom of the display is a toggle button for opening and closing the 
-                extended display that goes along with the primary content shown. -->
-                <div class="previewDisplayDetailsContainer">
-
-                    <!-- Here a video or an image slideshow will be displayed. -->
-                    <iframe class="previewDisplayVideoA" src="https://www.youtube.com/embed/2n6P4i6BMM0?&autoplay=1&loop=1&playlist=2n6P4i6BMM0&amp;showinfo=0&controls=0&mute=1" 
-                        frameborder="0" allow=" gyroscope; picture-in-picture"></iframe>
-
-                    <!-- This is the text description of the project being displayed. -->
-                    <p class="previewDisplayBasicDescriptionText basicSiteText">Games are so much more than a way of having fun, as virtual reality is so much more 
-                        than a means of playing games. They are multidimensional frameworks for both the construction and observation of experiences. For what are WE but
-                        the sum of our unique experiences broken down and 
-                    </p>
-
-                    <!-- This is the container that will give the project preview its
-                    placement within the display container. -->
-                    <div class="previewDisplayButtonContainer">
-                        <!-- This is the button that will take the viewer to the full project
-                        page associated with the preview. -->
-                        <a class="basicSiteBtn_Theme" href= "experienceDesigner_ProjectPageTemplate.html">VIEW PROJECT</a>
-                    </div>
-
-                </div>
-
-                <!-- Here the toggle button for the extended display
-                is placed at the base of the display container. -->
-                <div class="previewExtentedDisplayToggleBlock">
-
-                    <!-- Container that holds the toggle button and 
-                    arrow image that overlays it. -->
-                    <div>
-
-                        <!-- The arrow image that will overlay the
-                        toggle button below. -->
-
-                        <!-- This is the actual toggle button that opens and closes the extended 
-                        summary displays by calling the DisplayExtendedSummaryBehavior.js and
-                        sending in an ID to identify which extended display to open or close.-->
-                        <button class="previewExtentedDisplayContainerToggle" onclick="ToggleDisplayExtendedSummaryWindow ('Project1')"></button>
-                    
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- The extended display block that goes with each of the project previews.
-            This will be the element that opens and closes. -->
-            <div class= "previewSectionDisplayExtendedContainer" id= "sectionDisplayExtendedWindow_Experiences_Project1">
-
-                <!-- This is that container that holds all the content that will fade in and out
-                as the extended display window opens and closes. -->
-                <div class= "previewSectionDisplayExtendedContent" id= "sectionDisplayExtendedContent_Experiences_Project1">
-
-                    <!-- As a piece of the extended project summary, 
-                    this will be the text based description. -->
-                    <p class="previewDisplayBasicDescriptionText basicSiteText">Games are so much more than a way of having fun, as virtual reality is so much more 
-                        than a means of playing games. They are multidimensional frameworks for both the construction and observation of experiences. For what are WE but
-                        the sum of our unique experiences broken down and 
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-<!-- Horizontal block to stage the location of the 
-        project preview displays going down the page. -->
-        <div class="previewDisplayBlock">
-
-            <!-- Display container that holds the intial content viewers will see
-            about the project being shown. -->
-            <div class="previewDisplayContainer">
-
-                 <!-- Block that holds the project title information. -->
-                 <div class="previewDisplayTitleContainer">
-                     <!-- The actual title of the project is displayed here. -->
-                    <p class="previewDisplayTitle">PROJECT 1</p>
-                </div>
-
-                <!-- Container that holds the primary summary for this project preview 
-                display. A piece of imagery, a small text description, and a button 
-                linked to the full project page if the viewer wishes to see it. At the 
-                bottom of the display is a toggle button for opening and closing the 
-                extended display that goes along with the primary content shown. -->
-                <div class="previewDisplayDetailsContainer">
-
-                    <!-- Here a video or an image slideshow will be displayed. -->
-                    <iframe class="previewDisplayVideoA" src="https://www.youtube.com/embed/2n6P4i6BMM0?&autoplay=1&loop=1&playlist=2n6P4i6BMM0&amp;showinfo=0&controls=0&mute=1" 
-                        frameborder="0" allow=" gyroscope; picture-in-picture"></iframe>
-
-                    <!-- This is the text description of the project being displayed. -->
-                    <p class="previewDisplayBasicDescriptionText basicSiteText">Games are so much more than a way of having fun, as virtual reality is so much more 
-                        than a means of playing games. They are multidimensional frameworks for both the construction and observation of experiences. For what are WE but
-                        the sum of our unique experiences broken down and 
-                    </p>
-
-                    <!-- This is the container that will give the project preview its
-                    placement within the display container. -->
-                    <div class="previewDisplayButtonContainer">
-                        <!-- This is the button that will take the viewer to the full project
-                        page associated with the preview. -->
-                        <a class="basicSiteBtn_Theme" href= "experienceDesigner_ProjectPageTemplate.html">VIEW PROJECT</a>
-                    </div>
-
-                </div>
-
-                <!-- Here the toggle button for the extended display
-                is placed at the base of the display container. -->
-                <div class="previewExtentedDisplayToggleBlock">
-
-                    <!-- Container that holds the toggle button and 
-                    arrow image that overlays it. -->
-                    <div>
-
-                        <!-- The arrow image that will overlay the
-                        toggle button below. -->
-
-                        <!-- This is the actual toggle button that opens and closes the extended 
-                        summary displays by calling the DisplayExtendedSummaryBehavior.js and
-                        sending in an ID to identify which extended display to open or close.-->
-                        <button class="previewExtentedDisplayContainerToggle" onclick="ToggleDisplayExtendedSummaryWindow ('Project1')"></button>
-                    
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- The extended display block that goes with each of the project previews.
-            This will be the element that opens and closes. -->
-            <div class= "previewSectionDisplayExtendedContainer" id= "sectionDisplayExtendedWindow_Experiences_Project1">
-
-                <!-- This is that container that holds all the content that will fade in and out
-                as the extended display window opens and closes. -->
-                <div class= "previewSectionDisplayExtendedContent" id= "sectionDisplayExtendedContent_Experiences_Project1">
-
-                    <!-- As a piece of the extended project summary, 
-                    this will be the text based description. -->
-                    <p class="previewDisplayBasicDescriptionText basicSiteText">Games are so much more than a way of having fun, as virtual reality is so much more 
-                        than a means of playing games. They are multidimensional frameworks for both the construction and observation of experiences. For what are WE but
-                        the sum of our unique experiences broken down and 
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-<!-- Horizontal block to stage the location of the 
-        project preview displays going down the page. -->
-        <div class="previewDisplayBlock">
-
-            <!-- Display container that holds the intial content viewers will see
-            about the project being shown. -->
-            <div class="previewDisplayContainer">
-
-                 <!-- Block that holds the project title information. -->
-                 <div class="previewDisplayTitleContainer">
-                     <!-- The actual title of the project is displayed here. -->
-                    <p class="previewDisplayTitle">PROJECT 1</p>
-                </div>
-
-                <!-- Container that holds the primary summary for this project preview 
-                display. A piece of imagery, a small text description, and a button 
-                linked to the full project page if the viewer wishes to see it. At the 
-                bottom of the display is a toggle button for opening and closing the 
-                extended display that goes along with the primary content shown. -->
-                <div class="previewDisplayDetailsContainer">
-
-                    <!-- Here a video or an image slideshow will be displayed. -->
-                    <iframe class="previewDisplayVideoA" src="https://www.youtube.com/embed/2n6P4i6BMM0?&autoplay=1&loop=1&playlist=2n6P4i6BMM0&amp;showinfo=0&controls=0&mute=1" 
-                        frameborder="0" allow=" gyroscope; picture-in-picture"></iframe>
-
-                    <!-- This is the text description of the project being displayed. -->
-                    <p class="previewDisplayBasicDescriptionText basicSiteText">Games are so much more than a way of having fun, as virtual reality is so much more 
-                        than a means of playing games. They are multidimensional frameworks for both the construction and observation of experiences. For what are WE but
-                        the sum of our unique experiences broken down and 
-                    </p>
-
-                    <!-- This is the container that will give the project preview its
-                    placement within the display container. -->
-                    <div class="previewDisplayButtonContainer">
-                        <!-- This is the button that will take the viewer to the full project
-                        page associated with the preview. -->
-                        <a class="basicSiteBtn_Theme" href= "experienceDesigner_ProjectPageTemplate.html">VIEW PROJECT</a>
-                    </div>
-
-                </div>
-
-                <!-- Here the toggle button for the extended display
-                is placed at the base of the display container. -->
-                <div class="previewExtentedDisplayToggleBlock">
-
-                    <!-- Container that holds the toggle button and 
-                    arrow image that overlays it. -->
-                    <div>
-
-                        <!-- The arrow image that will overlay the
-                        toggle button below. -->
-
-                        <!-- This is the actual toggle button that opens and closes the extended 
-                        summary displays by calling the DisplayExtendedSummaryBehavior.js and
-                        sending in an ID to identify which extended display to open or close.-->
-                        <button class="previewExtentedDisplayContainerToggle" onclick="ToggleDisplayExtendedSummaryWindow ('Project1')"></button>
-                    
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- The extended display block that goes with each of the project previews.
-            This will be the element that opens and closes. -->
-            <div class= "previewSectionDisplayExtendedContainer" id= "sectionDisplayExtendedWindow_Experiences_Project1">
-
-                <!-- This is that container that holds all the content that will fade in and out
-                as the extended display window opens and closes. -->
-                <div class= "previewSectionDisplayExtendedContent" id= "sectionDisplayExtendedContent_Experiences_Project1">
-
-                    <!-- As a piece of the extended project summary, 
-                    this will be the text based description. -->
-                    <p class="previewDisplayBasicDescriptionText basicSiteText">Games are so much more than a way of having fun, as virtual reality is so much more 
-                        than a means of playing games. They are multidimensional frameworks for both the construction and observation of experiences. For what are WE but
-                        the sum of our unique experiences broken down and 
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-<!-- Horizontal block to stage the location of the 
-        project preview displays going down the page. -->
-        <div class="previewDisplayBlock">
-
-            <!-- Display container that holds the intial content viewers will see
-            about the project being shown. -->
-            <div class="previewDisplayContainer">
-
-                 <!-- Block that holds the project title information. -->
-                 <div class="previewDisplayTitleContainer">
-                     <!-- The actual title of the project is displayed here. -->
-                    <p class="previewDisplayTitle">PROJECT 1</p>
-                </div>
-
-                <!-- Container that holds the primary summary for this project preview 
-                display. A piece of imagery, a small text description, and a button 
-                linked to the full project page if the viewer wishes to see it. At the 
-                bottom of the display is a toggle button for opening and closing the 
-                extended display that goes along with the primary content shown. -->
-                <div class="previewDisplayDetailsContainer">
-
-                    <!-- Here a video or an image slideshow will be displayed. -->
-                    <iframe class="previewDisplayVideoA" src="https://www.youtube.com/embed/2n6P4i6BMM0?&autoplay=1&loop=1&playlist=2n6P4i6BMM0&amp;showinfo=0&controls=0&mute=1" 
-                        frameborder="0" allow=" gyroscope; picture-in-picture"></iframe>
-
-                    <!-- This is the text description of the project being displayed. -->
-                    <p class="previewDisplayBasicDescriptionText basicSiteText">Games are so much more than a way of having fun, as virtual reality is so much more 
-                        than a means of playing games. They are multidimensional frameworks for both the construction and observation of experiences. For what are WE but
-                        the sum of our unique experiences broken down and 
-                    </p>
-
-                    <!-- This is the container that will give the project preview its
-                    placement within the display container. -->
-                    <div class="previewDisplayButtonContainer">
-                        <!-- This is the button that will take the viewer to the full project
-                        page associated with the preview. -->
-                        <a class="basicSiteBtn_Theme" href= "experienceDesigner_ProjectPageTemplate.html">VIEW PROJECT</a>
-                    </div>
-
-                </div>
-
-                <!-- Here the toggle button for the extended display
-                is placed at the base of the display container. -->
-                <div class="previewExtentedDisplayToggleBlock">
-
-                    <!-- Container that holds the toggle button and 
-                    arrow image that overlays it. -->
-                    <div>
-
-                        <!-- The arrow image that will overlay the
-                        toggle button below. -->
-
-                        <!-- This is the actual toggle button that opens and closes the extended 
-                        summary displays by calling the DisplayExtendedSummaryBehavior.js and
-                        sending in an ID to identify which extended display to open or close.-->
-                        <button class="previewExtentedDisplayContainerToggle" onclick="ToggleDisplayExtendedSummaryWindow ('Project1')"></button>
-                    
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- The extended display block that goes with each of the project previews.
-            This will be the element that opens and closes. -->
-            <div class= "previewSectionDisplayExtendedContainer" id= "sectionDisplayExtendedWindow_Experiences_Project1">
-
-                <!-- This is that container that holds all the content that will fade in and out
-                as the extended display window opens and closes. -->
-                <div class= "previewSectionDisplayExtendedContent" id= "sectionDisplayExtendedContent_Experiences_Project1">
-
-                    <!-- As a piece of the extended project summary, 
-                    this will be the text based description. -->
-                    <p class="previewDisplayBasicDescriptionText basicSiteText">Games are so much more than a way of having fun, as virtual reality is so much more 
-                        than a means of playing games. They are multidimensional frameworks for both the construction and observation of experiences. For what are WE but
-                        the sum of our unique experiences broken down and 
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
+        
+    </div>
 
 
         <!-- *************************************************************************************************** -->
@@ -632,66 +247,6 @@ above this pages closing 'body' tag. -->
     <!-- Container holds all content that will be 
     fixed to the bottom of all related pages!! -->
     <footer>
-
-                <!-- ************************************************************************************ -->
-                                        <!-- ****** NAV BUTTON DISPLAY ****** -->
-                <!-- ************************************************************************************ -->
-                <!-- Each page will have two navigation button displays that give the viewer access to other
-                site related pages. The one here in the footer contains navigation buttons for the various
-                professional documentation pages that display the different things specific to my professional
-                character, as well as how to get ahold of me. -->
-
-        <!-- This is where the toggle button for the footer navigation 
-        buttons will be. The block itself is just for the sake of 
-        placement as it is in the header. -->
-        <div class="navButtonDisplay_ToggleBlock">
-
-            <!-- The toggle container holds the actual toggle button for the 
-            footer navigation buttons, and will also hold the cosmetic images 
-            for the top of the container as well as the button overlay. Similar
-            to the header toggle container. -->
-            <div class="footerNavButtonDisplay_ToggleContainer">
-
-                <!-- The cosmetics will be held here!! -->
-
-                <!-- This is the actual toggle button for the footer navigation button display. When a viewer
-                clicks it, it sends a message to the displays behavior script telling it to change the status
-                of the display window, and that it is the 'footer' and not the 'header' display that wants to
-                make the change. -->
-                <button class="navButtonDisplayToggle" onclick="ToggleButtonDisplayStatus (false)"></button>
-
-            </div>
-
-        </div>
-
-        <!-- Holds and handles content for the navigation buttons within the page footer display container.
-        It has a class for styling, and an ID for the opening and closing behavior of the button display. -->
-        <div class="professionalDocumentationPageNavButtonContainer" id="professionalDocumentationPageNavButtonDisplay">
-
-            <!-- For the time being, the footer button display requires a 
-            spacer to help with cosmetic touches. -->
-            <div class="footerDisplayButtonSpacer"></div>
-
-            <!-- Pro-doc navigation button 1 will take the viewer to the resume page. -->
-            <a class="basicSiteBtn_Theme smallBtn navButton_Footer" href= "resume.html">RESUME</a>
-            <!-- Pro-doc navigation button 2 will take the viewer to the biography page. -->
-            <a class="basicSiteBtn_Theme navButton_Footer" href= "bio.html">BIO</a>
-            <!-- Pro-doc navigation button 3 will take the viewer to the contact page found on the old wix site. This will
-            open the page in a new browser window for the viewer. -->
-            <a class="basicSiteBtn_Theme smallBtn navButton_Footer" href= "https://chrispetsche.wixsite.com/chrispetsche/contact" target="_blank">CONTACT</a>
-            <!-- Pro-doc navigation button 4 will take the viewer to the philosophy page. -->
-
-
-            <!-- The 'Last' navigation button will take the viewer to the previous page viewed,
-            if there is not a navigation button already built for it in the header or footer
-            button displays. If there is no page to return to, whether this is the first page
-            the viewer has accessed or under the recently stated logic, the button is greyed out
-            as it is here. All preview pages and professional documention pages will have this
-            button greyed. -->
-            <a class="basicSiteBtn_Greyed wideBtn navButton_Footer">LAST</a>
-    
-        </div>
-                
 
         <!-- Holds content for other well 
         known professional site links! -->
@@ -732,22 +287,7 @@ above this pages closing 'body' tag. -->
                         higher because the browser hasn't read down the page far enough to find it. So,
                         create... then effect!!  -->
 
-    <!-- For each of the navigation button displays to perform their behavior, the
-    script here is ran. This is the behavior that the two display toggle buttons 
-    tap into when the viewer wants to change their status. -->
-    <script src="javaScript/NavButtonDisplayBehavior.js"></script>
-
-    <!-- The following two scripts are specific to preview page display behavior. In
-    this case, it's the displays extended summary behavior that allows the viewer to
-    open and close them. The first is a list of objects containing information unique
-    to each display on the page. Following the same logic as to why all the scripts
-    are placed at the bottom of the page, the individual scripts are placed based on
-    the same thought of 'create then effect'. So the objects and their information are
-    created before... -->
-    <script src="javaScript/DisplayExtendedSummaryObjects.js"></script>
-    <!-- The behavior can use them, if a viewer wishes to open or close a display
-    summary via its own toggle button. -->
-    <script src="javaScript/DisplayExtendedSummaryBehavior.js"></script>
+    
 
     <script src="javaScript/BasicSiteBehavior.js"></script>
 

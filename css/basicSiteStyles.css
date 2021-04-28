@@ -32,7 +32,7 @@ body {
 
 .backgroundVideoContainer {
 	height: 100%;
-	opacity: 0.9;
+	opacity: 0.5;
 	position: fixed;
 	width: 100%;
 	z-index: 0;
@@ -44,7 +44,7 @@ body {
 	margin: 0;
 	padding: 0;
 	position: fixed;
-	top: 130px;
+	top: 100px;
 	width: 100%;
 }
 
@@ -78,30 +78,15 @@ body {
                                     but no specific place. The only thing they have in common
                                     is that they are not unique. */
 
-/* Both navigation button displays will be contained in the toggle block.
-Set for mostly placement sake. */
-.navButtonDisplay_ToggleBlock {
-    display: block;
-    width: 100%;
-}
-
-/* Both navigation button displays will have an identical button with
-the following styling attributes. */
-.navButtonDisplayToggle {
-    background-color: lightblue;
-    border-radius: 10px;
-    height: 20px;
-    width: 50px;
-}
 
 /* Block that holds all the primary content for each page. Another
 element mostly for placement.  */
 .primaryContentBlock {
     display: block;
     margin: 0 auto 10px;
-    padding: 31px 0;
+    padding: 0;
     position: relative;
-    top: 100px;
+    top: 75px;
     width: 100%;
 }
 
@@ -140,7 +125,14 @@ blocks as they come down the page. */
                                     /* As there are several buttons throughout the site, most
                                     share styles, but a couple are quite differet. The following
                                     classes handle each case. */
-
+.primarySkillsButton{
+    background: rgb(0, 10, 110);
+    background-image: linear-gradient(to bottom, rgb(0, 75, 230, 0.65), rgba(0, 0, 0, 0.05));
+    border-radius: 25px;
+    display: inline-block;
+    margin: 2px;
+    padding: 7px 10px;
+}
 /* The majority of the buttons will have the same 
 theme to them, especially the navigation buttons.
 This class handles the basics for them all. */
@@ -229,26 +221,9 @@ declared button size. */
                                    */
 
 
-/* Simplay insures that the content in
-any page introduction is centered. */
-.introDisplay {
-    text-align: center;
-}
 
-/* The text that makes up the intro to the site. */
-.pageIntroText {
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    font-family: 'Quicksand', sans-serif;
-    font-size: .9rem;
-    left: 0;
-    margin: 12px auto;
-    max-width: 600px;
-    padding: 3px;
-    position: relative;
-    right: 0;
-    text-align: center;
-}
+
+
 
 /* Block that provides vertical location for the 
 horizontal sections going down the page. */
@@ -354,15 +329,9 @@ h3 {
     font-family: 'El Messiri', sans-serif;
     line-height: 20px;
     margin: 0 auto;
-    padding: 7px;
+    padding: 0;
     position: relative;
     text-shadow: 0 0 3px rgb(255, 0, 157), 0 0 5px rgb(0, 174, 255);
-}
-
-/* This element is created for 
-placement and cosmetic staging. */
-.headerContainer {
-    display: inline-block;
 }
 
 /* This element is also created for 
@@ -372,16 +341,11 @@ placement and cosmetic staging. */
     margin: 0;
 }
 
-/* Holds the professional title content, and applies a 
-background color for further styling the area at the top of
-each page. */
-.headerCenterPlate {
-    background: rgba(0, 0, 0, 0.164);
+.siteTypeContainer{
     display: block;
     margin: 0 auto;
-    padding: 0 0 3px 0;
+    padding: 0;
     position: relative;
-    width: 100%;
 }
 
 /* The text just above the navigation buttons letting the 
@@ -395,6 +359,52 @@ viewer know this is a portfolio. */
     margin: 0 auto;
     padding: 2px 5px;
     position: relative;
+}
+
+/* Holds the professional title content, and applies a 
+background color for further styling the area at the top of
+each page. */
+.primarySkillsBlock {
+    background: rgba(0, 0, 0, 0.164);
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.basicSiteNavButtonsContainer{
+    color:black;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+    position: relative;
+}
+
+/* Block just below header that 
+holds the sites intro text.*/
+.briefIntroContainer {
+    color: black;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+/* The text that makes up the intro to the site. */
+.pageIntroText {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .9rem;
+    left: 0;
+    margin: 5px auto;
+    max-width: 600px;
+    padding: 3px;
+    position: relative;
+    right: 0;
+    text-align: center;
 }
 
 /* The cosmetic elements to art the
